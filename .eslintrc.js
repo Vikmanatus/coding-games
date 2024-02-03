@@ -19,7 +19,9 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    // We allow console logs because in CodinGame IDE console.log are used to pass the response of the exercise
+    // console.error allows you to debug
+    'no-console': ['error', { allow: ['log'] }],
     'no-shadow': 'off',
     eqeqeq: 'error',
     '@typescript-eslint/no-shadow': 'warn',
