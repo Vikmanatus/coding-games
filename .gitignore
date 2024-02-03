@@ -1,0 +1,4 @@
+binaries/cg-local-app-1.3.0.jar
+node_modules
+yarn-error.log
+.eslintcache

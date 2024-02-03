@@ -1,0 +1,36 @@
+{
+  "name": "codinggame",
+  "version": "1.0.0",
+  "description": "A simple repo used to sync your favorite IDE with Coding Game IDE",
+  "main": "index.js",
+  "scripts": {
+    "setup:scripts:permission": "chmod +x ./scripts/setupCodingSync.sh && chmod +x ./scripts/runCodingSync.sh",
+    "setup:install:cg-local": "./scripts/setupCodingSync.sh",
+    "run:coding-sync": "./scripts/runCodingSync.sh",
+    "test:types":"tsc --noEmit",
+    "test:lint": "eslint src --ext .ts --cache --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vikmanatus/coding-games.git"
+  },
+  "author": "Viktor Stoyanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vikmanatus/coding-games/issues"
+  },
+  "homepage": "https://github.com/Vikmanatus/coding-games#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-tsdoc-require": "^0.0.3",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}
